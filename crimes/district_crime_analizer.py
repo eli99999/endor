@@ -22,7 +22,7 @@ PARSED_CSV_FILE_NAME = "districtCrimes.csv"
 #s3_helper = AwsFileDownloader(BUCKET_NAME, CSV_FILE_NAME, CSV_FILE_NAME)
 #s3_helper.download_file()
 
-#urllib.request.urlretrieve (URL, CSV_FILE_NAME)
+urllib.request.urlretrieve (URL, CSV_FILE_NAME)
 analize_crimes =  AnalizeCrimesCsv()
 analize_crimes.parse_crimes_csv(CSV_FILE_NAME)
 result_list = analize_crimes.dictionary_to_sorted_list()
